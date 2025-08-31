@@ -12,6 +12,10 @@ app.use(express.json());
 
 const ragSystem = new RAGSystem();
 
+app.get("/",async (req,res)=>{
+    res.send("Working fine")
+})
+
 app.post("/api/query", async (req, res) => {
   try {
     const { query, history } = req.body;
