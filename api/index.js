@@ -13,7 +13,7 @@ app.use(express.json());
 const ragSystem = new RAGSystem();
 
 app.get("/",async (req,res)=>{
-    res.status(200).json({ message: "Hello from the API!" });
+    res.status(200).json({ message: "Hello from the API" });
 })
 
 app.post("/api/query", async (req, res) => {
