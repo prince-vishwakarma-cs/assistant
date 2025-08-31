@@ -16,6 +16,10 @@ app.get("/",async (req,res)=>{
     res.status(200).json({ message: "Hello from the API" });
 })
 
+app.get("/api", (req, res) => {
+    res.status(200).json({ message: "Welcome to the RAG API. The server is running." });
+});
+
 app.post("/api/query", async (req, res) => {
   try {
     const { query, history } = req.body;
