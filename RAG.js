@@ -95,7 +95,7 @@ class RAGSystem {
       this.retriever = this.vectorStore.asRetriever({ k: 2 });
       console.log("Documents stored in vector database");
     } catch (error) {
-      console.error("Error storing in vector database:", error);
+      console.error("Error storing in vector database :", error);
       throw error;
     }
   }
